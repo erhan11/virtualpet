@@ -22,4 +22,10 @@ describe("constructor", () => {
     expect(dog.hunger).toEqual(5);
     expect(dog.fitness).toEqual(7);
   });
+  it("walks", () => {
+    const dog = new Pet("lasi");
+    dog.fitness = 2;
+    dog.walk();
+    expect(dog.fitness).toEqual(6);
+  });
 });
